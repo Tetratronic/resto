@@ -12,7 +12,7 @@ function menu() {
   const menu = document.createElement("li");
   const menubtn =document.createElement("button");
   menubtn.textContent = "Menu";
-  menubtn.classList.add("navbutton");
+  menubtn.classList.add("navbutton", "menu");
   menu.appendChild(menubtn)
   list.appendChild(menu);
 
