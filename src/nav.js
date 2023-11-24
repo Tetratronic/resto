@@ -1,16 +1,26 @@
 function menu() {
   const list = document.createElement("ul");
   list.classList.add("navmenu");
+
   const home = document.createElement("li");
-  home.textContent = "Home";
+  const homebtn =document.createElement("button");
+  homebtn.textContent = "Home";
+  homebtn.classList.add("navbutton");
+  home.appendChild(homebtn);
   list.appendChild(home);
 
   const menu = document.createElement("li");
-  menu.textContent = "Menu";
+  const menubtn =document.createElement("button");
+  menubtn.textContent = "Menu";
+  menubtn.classList.add("navbutton");
+  menu.appendChild(menubtn)
   list.appendChild(menu);
 
   const about = document.createElement("li");
-  about.textContent = "About";
+  const aboutbtn = document.createElement("button");
+  aboutbtn.textContent = "About";
+  aboutbtn.classList.add("navbutton")
+  about.appendChild(aboutbtn);
   list.appendChild(about);
 
   return list;
